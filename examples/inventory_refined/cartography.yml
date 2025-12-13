@@ -1,0 +1,12 @@
+---
+az:
+  - az
+  - vault_address
+cluster:
+  - ceph_version
+datacenter:
+  - datacenter
+  - emergency_contact
+rack:
+  - rack_id
+  - max_slots

@@ -1,0 +1,19 @@
+---
+all:
+  children:
+    eu_central_1:
+      children:
+        equinix_1:
+          children:
+            rack_1:
+              hosts:
+                server_01: {}
+                server_02: {}
+            rack_2:
+              hosts:
+                server_03: {}
+    cluster_1:
+      hosts:
+        server_01: {}
+        server_02: {}
+        server_03: {}
