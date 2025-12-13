@@ -1,5 +1,3 @@
-## Ansible’s Python API DOES NOT expose group vars in a universal way unless you resolve variables for a host.
-## aussi dire ya .yml hardcode
 import yaml
 import click
 import os
