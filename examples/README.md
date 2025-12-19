@@ -36,13 +36,11 @@ to
 ```
 The cartography can also be found at ```inventory_refined/cartography.yml``` and the tool can be used like so :
 ```
-x:~/Desktop/ansible-mercator$ uv run ansible-mercator --group_vars examples/inventory_refined/group_vars --inventory examples/inventory_refined/inventory.yml --cartography examples/inventory_refined/cartography.yml 
-
-all good
+x:~/Desktop/ansible-mercator$ ./ansible-mercator.sh examples/inventory_refined examples/inventory_refined/cartography.yml
 ```
 If we introduce the above flaw we get
 ```
-x:~/Desktop/ansible-mercator$ uv run ansible-mercator --group_vars examples/inventory_refined/group_vars --inventory examples/inventory_refined/inventory.yml --cartography examples/inventory_refined/cartography.yml 
+x:~/Desktop/ansible-mercator$ ./ansible-mercator.sh examples/inventory_refined examples/inventory_refined/cartography.yml 
 
-ERROR: INCORRECT LOCATION ceph_version in rack_1.yml
+❌ rack_1 has variable 'ceph_version'
 ```
